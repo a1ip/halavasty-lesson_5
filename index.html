@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Типы данных JavaScript</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="material/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+      }
+    </style>
+  </head>
+  <body class="shower list">
+    <header class="caption">
+      <h1>Типы данных JavaScript</h1>
+    </header>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">План на сегодня</h2>
+        <ul>
+          <li>Узнаем какие есть типы в JavaScript</li>
+
+          <li>Подробно об объектах</li>
+          <li>Структуры данных</li>
+          <!-- <li>Приведение типов</li> -->
+          <li>Условные операторы</li>
+          <li>Строгий режим (Strict Mode)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Подключить JS</h2>
+      <img class="cover" src="public/images/import.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Какие типы данных есть?</h2>
+        <ul>
+          <li class="next">Number (число)</li>
+          <li class="next">String (строка)</li>
+          <li class="next">Boolean (логический true/false)</li>
+          <li class="next">null</li>
+          <li class="next">undefined</li>
+          <li class="next">Object</li>
+          <li class="next">Symbol</li>
+          <li class="next">Bigint</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="shout">typeof</h2>
+      </div>
+    </section>
+    <section class="slide purple">
+      <h2 class="white">typeof</h2>
+      <img class="cover" src="public/images/typeof.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <h2 class="white">typeof</h2>
+      <img class="cover" src="public/images/typeof2.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="shout">Объекты</h2>
+      </div>
+    </section>
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Объекты</h2>
+        <p>
+          Тип object указывает на составное значение, в котором вы можете
+          устанавливать свойства (именованные области), хранящие свои
+          собственные значения любого типа.
+        </p>
+      </div>
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Объекты</h2>
+      <img class="cover" src="public/images/object.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Визуальное представление объекта</h2>
+      <img class="cover" src="public/images/objVisual.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Нотация объекта</h2>
+      <img class="cover" src="public/images/objUsing.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Усложним?</h2>
+      <img class="cover" src="public/images/objInObj.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Ещё чуть-чуть</h2>
+      <img class="cover" src="public/images/objMethod.png" alt="html code" />
+    </section>
+
+    <section class="slide purple">
+      <h2 class="white">
+        <a
+          href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...in"
+          >for...in</a
+        >
+      </h2>
+      <img class="cover" src="public/images/objInObj.png" alt="html code" />
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="shout">Массивы</h2>
+      </div>
+    </section>
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Массивы</h2>
+        <p>
+          Это объекты, которые хранят значения (любого типа) не в именованных
+          свойствах/ключах, а в ячейках, доступных по числовому индексу.
+        </p>
+        <p>JS используют 0 в качестве индекса первого элемента массива.</p>
+      </div>
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Массивы</h2>
+      <img class="cover" src="public/images/array.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Визуальное представление массива</h2>
+      <img class="cover" src="public/images/arrayVisual.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="shout">Методы</h2>
+      </div>
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Методы встроенных типов</h2>
+      <img class="cover" src="public/images/methods.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Именование переменные и методов</h2>
+        <ul>
+          <li>
+            Идентификатор должен начинаться с <b>a-z</b>, <b>A-Z</b>,
+            <b>$</b> или <b>_</b>
+          </li>
+          <li>Нельзя использовать "зарезервированные слова" - for, in, if</li>
+          <li>Нельзя использовать null, true и false</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <h2 class="white">Условные операторы</h2>
+      <img class="cover" src="public/images/if.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Switch</h2>
+      <img class="cover" src="public/images/switch.png" alt="html code" />
+    </section>
+    <section class="slide purple">
+      <h2 class="white">Тернарный оператор</h2>
+      <img class="cover" src="public/images/ter.png" alt="html code" />
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="shout">Строгий режим</h2>
+      </div>
+    </section>
+    <section class="slide purple">
+      <h2 class="white">"use strict"</h2>
+      <img class="cover" src="public/images/use.png" alt="html code" />
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">О чём мы сегодня говорили</h2>
+        <ul>
+          <li>Узнали какие есть типы в JavaScript</li>
+          <li>Знакомство с объектами</li>
+          <li>Структуры данных</li>
+          <li>Условные операторы</li>
+          <li>Строгий режим (Strict Mode)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="shout">Практика</h2>
+      </div>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="dist/shower.js"></script>
+    <!-- Copyright © 2022 Yours Truly, Famous Inc. -->
+  </body>
+</html>
